@@ -1,0 +1,21 @@
+Nome:
+	Listen!
+
+Cores:
+	#7500DC: destaque
+	#8217DF: leve destaque
+
+	#0C0C0C: escuro
+	#131313: escuro secundário
+
+	#FAFAFA: claro
+	#F5F5F5: claro secundário
+	
+	
+Fontes:
+	Secular One: logo
+
+	Figtree 400: conteúdo
+	Figtree 800: h2
+
+	

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./imagens/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="./css/conta-planos.css">
+	<title>Conta - listen!</title>
+</head>
+<body>
+	<!-- header -->
+	<div class="go-to-home" onclick="window.location.href = './home.html'">
+		<p>« voltar</p>
+	</div>
+	<main class="main" style="background:none;">
+		<section class="user-info">
+			<img src="./imagens/icons/conta.png" alt="" class="user-profile-pic">
+			<h1 class="user-name">Arthur Santana</h1>
+			<p class="user-email">arthur.santana.dev@gmail.com.br</p>
+		</section>
+		<section class="user-plan">
+
+			<div class="user-plan-row">
+				<h1>seu plano</h1>
+				<section class="user-plan__plan-badge" id="i-user-plan">
+					<div>
+						<p class="user-plan__plan-name">silver</p>
+						<p class="user-plan__plan-description">individual</p>
+					</div>
+					<p class="user-plan__plan-price">R$20,50<br>/mês</p>
+				</section>
+			</div>
+
+			<ul class="user-plan__plan-details">
+				<li class="plan-details-topic">ouça músicas sem anúncios</li>
+				<li class="plan-details-topic">ouça em qualquer lugar — até offline</li>
+				<li class="plan-details-topic">acesso ao listen & learn!, plataforma de idiomas</li>
+				<li class="plan-details-topic">escolha a música que quer ouvir</li>
+			</ul>
+			<div class="user-plan__buttons-wrapper">
+				<button class="user-plan__button user-plan__payment">
+					formas de pagamento
+				</button>
+				<button class="user-plan__button user-plan__other-plans" onclick="window.location.href = './outros-planos.html'">
+					outros planos
+				</button>
+			</div>
+		</section>
+	</main>
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<section class="footer__row">
+			<div class="column">
+				<div>
+					<p class="footer__content">
+						fale com a gente
+					</p>
+					<p class="footer__content">
+						privacidade
+					</p>
+					<p class="footer__content">
+						direitos autorais
+					</p>
+					<p class="footer__content">
+						siga a <i class="footer__text-logo">listen!</i> nas redes sociais
+					</p>
+				</div>
+				<span class="desc">
+					<i class="footer__text-logo">listen!</i>™ é um site criado por <a href="https://github.com/arthursantana-dev" target="_blank" rel="noopener noreferrer">Arthur Santana</a>
+				</span>
+			</div>
+			<div class="column">
+				<section class="footer__partners">
+					<p class="footer__content">
+						parceiros
+					</p>
+					<section class="footer__partners-row">
+						<img src="./imagens/icons/cisco.png" alt="" class="footer__partners-img">
+						<img src="./imagens/icons/jbl.png" alt="" class="footer__partners-img">
+						<img src="./imagens/icons/spotify.png" alt="" class="footer__partners-img">
+						<img src="./imagens/icons/unibank.png" alt="" class="footer__partners-img partners-img-large">
+					</section>
+				</section>
+			</div>
+		</section>
+	</footer>
+</body>
+</html>

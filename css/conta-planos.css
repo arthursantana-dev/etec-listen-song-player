@@ -1,0 +1,218 @@
+@import url(./variaveis.css);
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Figtree', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background: url('../imagens/pattern-bg-2.png');
+	background-repeat: repeat;
+	background-size: 30vw;
+	background-attachment: fixed;
+}
+
+div.go-to-home {
+	margin: 3rem;
+}
+
+div.go-to-home:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+div.go-to-home p {
+	color: var(--claro);
+	font-family: var(--fonte-logo);
+	font-size: 2rem;
+}
+
+/*------------------user-info------------------*/
+
+main.main {
+	width: fit-content;
+}
+
+main.main__user {
+	width: 80vw;
+	margin: auto;
+	background-color: var(--escuro);
+	padding: 1rem;
+	border-radius: 0.75rem;
+}
+
+section.user-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.user-plan-row h1 {
+	font-size: 7rem;
+}
+
+section.user-info h1 {
+	font-size: 4rem;
+}
+
+section.user-info p.user-email {
+	font-size: 1.15rem;
+	opacity: 0.9;
+}
+
+ul.user-plan__plan-details {
+	list-style: '- ';
+	margin-left: 2rem;
+	margin-bottom: 3rem;
+	font-size: 1.15rem;
+}
+
+.user-plan-row {
+	margin-bottom: 1rem;
+}
+/*------------------main------------------*/
+
+main.main {
+	margin-inline: auto;
+	width: fit-content;
+	color: var(--claro);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+img.user-profile-pic {
+	width: 9rem;
+}
+
+/*------------------user-plan------------------*/
+
+section.user-plan {
+	background-color: var(--escuro);
+	width: min(60vw, 50rem);
+	height: 100%;
+	padding: 2rem;
+	margin: 2rem;
+	border-radius: 0.5rem;
+}
+
+section.user-plan h1 {
+	font-size: 4rem;
+}
+
+.user-plan-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+section.user-plan__plan-badge {
+	background-color: var(--silver);
+	color: var(--escuro);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	width: fit-content;
+
+	padding: 0.5rem 0.8rem;
+	border-radius: 1rem;
+}
+
+p.user-plan__plan-name {
+	font-family: var(--fonte-logo);
+	font-size: 2rem;
+}
+
+p.user-plan__plan-description {
+	font-size: 1.25rem;
+	position: relative;
+	bottom: 0.5rem;
+}
+
+p.user-plan__plan-price {
+	font-weight: 600;
+}
+
+button.user-plan__button {
+	padding: 0.25rem 0.5rem;
+	font-size: 1.5rem;
+	border-radius: 0.25rem;
+	border: none;
+	width: fit-content;
+	color: var(--escuro);
+}
+
+button.user-plan__button:hover {
+	opacity: 0.9;
+	transition: 0.2s;
+}
+
+button.user-plan__other-plans{
+	background-color: var(--destaque);
+	color: var(--claro);
+}
+
+div.user-plan__buttons-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	gap: 0.25rem;
+}
+
+/*------------------consultar planos------------------*/
+
+main.main__user {
+	width: min(60vw, 50rem);
+	color: var(--claro);
+}
+
+.main__user h1 {
+	margin-bottom: 2rem;
+	font-size: 5rem;
+}
+
+.main h1 {
+	font-size: 7rem;
+}
+
+.user-plan__plan-badge {
+	width: fit-content;
+}
+
+.user-plan__plan-badge--silver {
+	background-color: var(--silver) !important ;
+	color: var(--claro) !important;
+}
+
+.user-plan__plan-badge--gold {
+	background-color: var(--gold) !important;
+}
+
+.user-plan__plan-badge--master {
+	background-color: var(--master) !important;
+	color: var(--claro) !important;
+}
+
+section.badge__wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+section.badge__wrapper .user-plan__plan-details {
+	margin-top: 0.5rem;
+}
+
+.user-plan__plan-details {
+	width: 50%;
+}
+
+#i-user-plan {
+	color: var(--claro);
+	background-color: var(--silver);
+}
+
+footer {
+	color: var(--claro);
+}
