@@ -10,7 +10,6 @@
 	<link rel="shortcut icon" href="./imagens/favicon.png" type="image/x-icon">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-	
 
 	<script src="./js/musicPlayer.js" defer></script>
 </head>
@@ -33,192 +32,194 @@
 		</ul>
 	</header>
 
-	<!-- menu lateral -->
-	<aside class="menu">
-		<section class="menu__album">
-			<span>minhas playlists</span>
-		</section>
-		<section class="menu__album__pics">
-			<div class="menu__album__pics__group">
-				<img src="https://github.com/arthursantana-dev/musicas-etec-listen/raw/main/img-musicas/a4bbd5f-imagine-dragons-smoke-and-mirrors.webp" alt="album.jpg">
-				<span>Smoke and Mirrors</span>
-			</div>
-			<div class="menu__album__pics__group">
-				<img src="https://github.com/arthursantana-dev/musicas-etec-listen/raw/main/img-musicas/Night_Visions_Album_Cover.jpg" alt="album.jpg">
-				<span>Night Visions</span>
-			</div>
-		</section>
-	</aside>
-
-	<!-- "feed" principal -->
-	<main class="main">
-		<section class="song-feed">
-			<h1>
-				tocadas recentemente
-			</h1>
-			<section class="row">
-				<div class="song-card" data-song-id="0">
-					<img src="./imagens/img-musicas/ajr-dtoml.jpg" alt="" class="card__img">
-					<span class="card__song-info">
-						<p class="card__song-name">
-							Don't Throw Out My Legos
-						</p>
-						<p class="card__song-author">
-							AJR
-						</p>
-					</span>
+	<section class="container flex-row flex-md-column wrapper">
+		<!-- menu lateral -->
+		<aside class="menu col-12 col-lg-2 flex-column flex-md-row">
+			<section class="menu__album">
+				<span>minhas playlists</span>
+			</section>
+			<section class="menu__album__pics">
+				<div class="menu__album__pics__group">
+					<img src="https://github.com/arthursantana-dev/musicas-etec-listen/raw/main/img-musicas/a4bbd5f-imagine-dragons-smoke-and-mirrors.webp" alt="album.jpg">
+					<span>Smoke and Mirrors</span>
 				</div>
-				<div class="song-card" data-song-id="1">
-					<img src="./imagens/img-musicas/ajr-wsv.jpg" alt="" class="card__img">
-					<span class="card__song-info">
-						<p class="card__song-name">
-							World's Smallest Violin
-						</p>
-						<p class="card__song-author">
-							AJR
-						</p>
-					</span>
-				</div>
-				<div class="song-card" data-song-id="2">
-					<img src="./imagens/img-musicas/cyfmh.jpg" alt="" class="card__img">
-					<span class="card__song-info">
-						<p class="card__song-name">
-							Can You Feel My Heart
-						</p>
-						<p class="card__song-author">
-							Bring Me the Horizon
-						</p>
-					</span>
-				</div>
-				<div class="song-card" data-song-id="3">
-					<img src="https://github.com/arthursantana-dev/musicas-etec-listen/raw/main/img-musicas/71DB-YFF9PL._SS500_.jpg" alt="" class="card__img">
-					<span class="card__song-info">
-						<p class="card__song-name">
-							I Ain’t Worried
-						</p>
-						<p class="card__song-author">
-							OneRepublic
-						</p>
-					</span>
+				<div class="menu__album__pics__group">
+					<img src="https://github.com/arthursantana-dev/musicas-etec-listen/raw/main/img-musicas/Night_Visions_Album_Cover.jpg" alt="album.jpg">
+					<span>Night Visions</span>
 				</div>
 			</section>
+		</aside>
 
-			<hr>
-
-			<h1>
-				baseado em sua biblioteca
-			</h1>
-			<section class="row">
-				
-				<div class="song-card" data-song-id="4">
-					<img src="./imagens/img-musicas/slts.jpg" alt="" class="card__img">
-					<span class="card__song-info">
-						<p class="card__song-name">
-							Smells Like Teen Spirit
-						</p>
-						<p class="card__song-author">
-							Nirvana
-						</p>
-					</span>
-				</div>
-				<div class="song-card" data-song-id="5">
-					<img src="./imagens/img-musicas/to-ao.jpg" alt="" class="card__img">
-					<span class="card__song-info">
-						<p class="card__song-name">
-							Another Love
-						</p>
-						<p class="card__song-author">
-							Tom Odell
-						</p>
-					</span>
-				</div>
-				<div class="song-card" data-song-id="6">
-					<img src="./imagens/img-musicas/d.png" alt="" class="card__img">
-					<span class="card__song-info">
-						<p class="card__song-name">
-							Dandelions
-						</p>
-						<p class="card__song-author">
-							Ruth B.
-						</p>
-					</span>
-				</div>
-				<div class="song-card" data-song-id="7">
-					<img src="https://github.com/arthursantana-dev/musicas-etec-listen/raw/main/img-musicas/41Xpw3DEF1L._UXNaN_FMjpg_QL85_.jpg" alt="" class="card__img">
-					<span class="card__song-info">
-						<p class="card__song-name">
-							Royalty
-						</p>
-						<p class="card__song-author">
-							Egzod & Maestro Chives
-						</p>
-					</span>
-				</div>
-			</section>
-		</section>
-
-		<!-- player -->
-		<section class="player">
-			<section class="player__song-info">
-				<img src="./imagens/img-musicas/template.jpg" alt="" class="player__song-img">
-				<div class="player__song-text-info">
-					<span class="player__song-name">Escolha uma música</span>
-					<span class="player__song-author"></span>
-					<button class="player__yt-button">
-						<img src="./imagens/icons/youtube.png" alt="" class="player__yt-icon">
-						<p>ouvir</p>
-					</button>
-				</div>
-			</section>
-			<section class="player__song-current-time">
-				<p id="song__current-time-value">00:00</p>
-				<input type="range" oninput="inputSongTime(this.value)" name="player__song-current-time-i" id="player__song-current-time-i" min="0" max="100" step="0.01" value="0">
-				<p id="song__final-time-value">00:00</p>
-			</section>
-			<section class="player__buttons-row">
-				<img src="./imagens/player-botoes/anterior.png" alt="" class="player__button previous-song-button">
-				<img src="./imagens/player-botoes/tocar.png" alt="" class="player__button play-pause-button">
-				<img src="./imagens/player-botoes/proxima.png" alt="" class="player__button next-song-button">
-			</section>
-		</section>
-
-		<!-- footer -->
-		<footer class="footer">
-			<section class="footer__row">
-				<div class="column">
-					<div>
-						<p class="footer__content">
-							fale com a gente
-						</p>
-						<p class="footer__content">
-							privacidade
-						</p>
-						<p class="footer__content">
-							direitos autorais
-						</p>
-						<p class="footer__content">
-							siga a <i class="footer__text-logo">listen!</i> nas redes sociais
-						</p>
-					</div>
-					<span class="desc">
-						<i class="footer__text-logo">listen!</i>™ é um site criado por <a href="https://github.com/arthursantana-dev" target="_blank" rel="noopener noreferrer">Arthur Santana</a>
-					</span>
-				</div>
-				<div class="column">
-					<section class="footer__partners">
-						<p class="footer__content">
-							parceiros
-						</p>
-						<section class="footer__partners-row">
-							<img src="./imagens/icons/cisco.png" alt="" class="footer__partners-img">
-							<img src="./imagens/icons/jbl.png" alt="" class="footer__partners-img">
-							<img src="./imagens/icons/spotify.png" alt="" class="footer__partners-img">
-							<img src="./imagens/icons/unibank.png" alt="" class="footer__partners-img partners-img-large">
-						</section>
+		<section class="col-12 col-lg-10 scroll-wrapper">
+			<!-- "feed" principal -->
+			<main class="main">
+				<section class="song-feed">
+					<h1>
+						tocadas recentemente
+					</h1>
+					<section class="row">
+						<div class="song-card" data-song-id="0">
+							<img src="./imagens/img-musicas/ajr-dtoml.jpg" alt="" class="card__img">
+							<span class="card__song-info">
+								<p class="card__song-name">
+									Don't Throw Out My Legos
+								</p>
+								<p class="card__song-author">
+									AJR
+								</p>
+							</span>
+						</div>
+						<div class="song-card" data-song-id="1">
+							<img src="./imagens/img-musicas/ajr-wsv.jpg" alt="" class="card__img">
+							<span class="card__song-info">
+								<p class="card__song-name">
+									World's Smallest Violin
+								</p>
+								<p class="card__song-author">
+									AJR
+								</p>
+							</span>
+						</div>
+						<div class="song-card" data-song-id="2">
+							<img src="./imagens/img-musicas/cyfmh.jpg" alt="" class="card__img">
+							<span class="card__song-info">
+								<p class="card__song-name">
+									Can You Feel My Heart
+								</p>
+								<p class="card__song-author">
+									Bring Me the Horizon
+								</p>
+							</span>
+						</div>
+						<div class="song-card" data-song-id="3">
+							<img src="https://github.com/arthursantana-dev/musicas-etec-listen/raw/main/img-musicas/71DB-YFF9PL._SS500_.jpg" alt="" class="card__img">
+							<span class="card__song-info">
+								<p class="card__song-name">
+									I Ain’t Worried
+								</p>
+								<p class="card__song-author">
+									OneRepublic
+								</p>
+							</span>
+						</div>
 					</section>
-				</div>
-			</section>
-		</footer>
-	</main>
+					<hr>
+					<h1>
+						baseado em sua biblioteca
+					</h1>
+					<section class="row">
+		
+						<div class="song-card" data-song-id="4">
+							<img src="./imagens/img-musicas/slts.jpg" alt="" class="card__img">
+							<span class="card__song-info">
+								<p class="card__song-name">
+									Smells Like Teen Spirit
+								</p>
+								<p class="card__song-author">
+									Nirvana
+								</p>
+							</span>
+						</div>
+						<div class="song-card" data-song-id="5">
+							<img src="./imagens/img-musicas/to-ao.jpg" alt="" class="card__img">
+							<span class="card__song-info">
+								<p class="card__song-name">
+									Another Love
+								</p>
+								<p class="card__song-author">
+									Tom Odell
+								</p>
+							</span>
+						</div>
+						<div class="song-card" data-song-id="6">
+							<img src="./imagens/img-musicas/d.png" alt="" class="card__img">
+							<span class="card__song-info">
+								<p class="card__song-name">
+									Dandelions
+								</p>
+								<p class="card__song-author">
+									Ruth B.
+								</p>
+							</span>
+						</div>
+						<div class="song-card" data-song-id="7">
+							<img src="https://github.com/arthursantana-dev/musicas-etec-listen/raw/main/img-musicas/41Xpw3DEF1L._UXNaN_FMjpg_QL85_.jpg" alt="" class="card__img">
+							<span class="card__song-info">
+								<p class="card__song-name">
+									Royalty
+								</p>
+								<p class="card__song-author">
+									Egzod & Maestro Chives
+								</p>
+							</span>
+						</div>
+					</section>
+				</section>
+				<!-- player -->
+				<section class="player">
+					<section class="player__song-info">
+						<img src="./imagens/img-musicas/template.jpg" alt="" class="player__song-img">
+						<div class="player__song-text-info">
+							<span class="player__song-name">Escolha uma música</span>
+							<span class="player__song-author"></span>
+							<button class="player__yt-button">
+								<img src="./imagens/icons/youtube.png" alt="" class="player__yt-icon">
+								<p>ouvir</p>
+							</button>
+						</div>
+					</section>
+					<section class="player__song-current-time">
+						<p id="song__current-time-value">00:00</p>
+						<input type="range" oninput="inputSongTime(this.value)" name="player__song-current-time-i" id="player__song-current-time-i" min="0" max="100" step="0.01" value="0">
+						<p id="song__final-time-value">00:00</p>
+					</section>
+					<section class="player__buttons-row">
+						<img src="./imagens/player-botoes/anterior.png" alt="" class="player__button previous-song-button">
+						<img src="./imagens/player-botoes/tocar.png" alt="" class="player__button play-pause-button">
+						<img src="./imagens/player-botoes/proxima.png" alt="" class="player__button next-song-button">
+					</section>
+				</section>
+
+				<!-- footer -->
+				<footer class="footer">
+					<section class="footer__row">
+						<div class="column">
+							<div>
+								<p class="footer__content">
+									fale com a gente
+								</p>
+								<p class="footer__content">
+									privacidade
+								</p>
+								<p class="footer__content">
+									direitos autorais
+								</p>
+								<p class="footer__content">
+									siga a <i class="footer__text-logo">listen!</i> nas redes sociais
+								</p>
+							</div>
+							<span class="desc">
+								<i class="footer__text-logo">listen!</i>™ é um site criado por <a href="https://github.com/arthursantana-dev" target="_blank" rel="noopener noreferrer">Arthur Santana</a>
+							</span>
+						</div>
+						<div class="column">
+							<section class="footer__partners">
+								<p class="footer__content">
+									parceiros
+								</p>
+								<section class="footer__partners-row">
+									<img src="./imagens/icons/cisco.png" alt="" class="footer__partners-img">
+									<img src="./imagens/icons/jbl.png" alt="" class="footer__partners-img">
+									<img src="./imagens/icons/spotify.png" alt="" class="footer__partners-img">
+									<img src="./imagens/icons/unibank.png" alt="" class="footer__partners-img partners-img-large">
+								</section>
+							</section>
+						</div>
+					</section>
+				</footer>
+			</main>
+		</section>
+	</section>
+	
 </body>
 </html>

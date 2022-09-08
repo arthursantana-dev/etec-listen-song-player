@@ -18,6 +18,17 @@ section.row {
 	flex-wrap: wrap;
 }
 
+section.wrapper {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+section.scroll-wrapper {
+	width: 100%;
+}
+
 /*------------------header------------------*/
 
 header.header {
@@ -72,10 +83,9 @@ img.header__icon {
 aside.menu {
 	background-color: var(--escuro-secundario);
 	z-index: 2;
-	max-width: 25vw;
-	height: 100vh;
+	width: 100%;
 	padding: 1rem;
-	position: fixed;
+	/* position: fixed; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -131,11 +141,10 @@ main.main {
 	background: url('../imagens/pattern-bg-2.png');
 	background-repeat: repeat;
 	background-size: 30vw;
-	width: 73vw;
 	height: fit-content;
-	margin-left: 25vw;
 	padding-top: 3%;
 	display: flex;
+	width: 100%;
 	flex-direction: column;
 
 	position: relative;
