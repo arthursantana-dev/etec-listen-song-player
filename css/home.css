@@ -26,7 +26,15 @@ section.wrapper {
 }
 
 section.scroll-wrapper {
-	width: 100%;
+	margin: 0 !important;
+	max-width: none !important;
+	padding: 0;
+}
+
+div.row {
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
 }
 
 /*------------------header------------------*/
@@ -51,10 +59,12 @@ header ul {
 	display: flex;
 	list-style: none;
 	align-items: center;
+	margin: 0;
 }
 
 header h2 {
 	font-size: 1.55rem;
+	margin: 0;
 }
 
 header ul li {
@@ -73,12 +83,16 @@ img.header__logo {
 }
 
 img.header__icon {
-	width: 1.75rem;
-	height: 1.75rem;
+	width: 1.9rem;
+	height: 1.9rem;
 	margin-right: 0.15rem;
 }
 
 /*------------------menu------------------*/
+
+section.scroll-wrapper div.row {
+	background-color: var(--escuro-secundario);
+}
 
 aside.menu {
 	background-color: var(--escuro-secundario);
@@ -86,15 +100,24 @@ aside.menu {
 	width: 100%;
 	padding: 1rem;
 	/* position: fixed; */
+	margin-top: 4rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+}
+
+section.albuns-wrapper {
+	height: fit-content;
+	position: fixed;
 }
 
 .menu__album {
 	justify-self: flex-start;
 	margin-bottom: 3rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
 }
 
 .menu__album span{
@@ -102,18 +125,18 @@ aside.menu {
 	text-align: center;
 	font-family: 'Figtree', sans-serif;
 	font-weight: 700;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 }
 .menu__album__pics{
 	gap: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 .menu__album__pics__group{
-	height: min(calc(100% - 2rem), 15rem) ;
-	width: min(calc(100% - 2rem), 15rem) ;
+	height: min(calc(100% - 2rem), 10rem) ;
+	width: min(calc(100% - 2rem), 10rem) ;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -171,6 +194,7 @@ main hr {
 
 section.player {
 	position: fixed;
+	z-index: 3;
 	bottom: 1rem;
 	right: 1rem;
 	padding: 1rem;
@@ -179,7 +203,7 @@ section.player {
 	border: 1px solid var(--claro-secundario-leve);
 	opacity: 0.98;
 	width: fit-content;
-	max-width: 20rem;
+	max-width: 25rem;
 	height: fit-content;
 }
 
@@ -238,9 +262,10 @@ button.player__yt-button {
 }
 
 button.player__yt-button p {
+	margin: 0;
 	color: var(--escuro);
 	font-weight: 900;
-	font-size: 0.99rem;
+	font-size: 1.15rem;
 	margin-right: 0.2rem;
 }
 
@@ -442,4 +467,12 @@ span.desc {
 	opacity: 0.3;
 	font-size: 0.75rem;
 	margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 767px){
+	section.albuns-wrapper {
+		margin-top: 0;
+		position: static;
+	}
 }
