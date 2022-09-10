@@ -24,8 +24,6 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-
-    <script src="./js/musicPlayer.js" defer></script>
   </head>
 
   <body>
@@ -195,19 +193,21 @@
 
             <!-- player -->
             <section class="player">
+				<div class="player__toggle-player-wrapper">
+					<button class="player__toggle-player" onclick="togglePlayer()">
+						<img
+						  src="./imagens/icons/cancelar.png"
+						  alt=""
+						  class="player__toggle-player__img"
+						/>
+					  </button>
+				</div>
               <section class="player__song-info">
                 <img
                   src="./imagens/img-musicas/template.jpg"
                   alt=""
                   class="player__song-img"
                 />
-                <button class="player__toggle-player">
-                  <img
-                    src="./imagens/icons/cancelar.png"
-                    alt=""
-                    class="player__toggle-player__img"
-                  />
-                </button>
                 <div class="player__song-text-info">
                   <span class="player__song-name">Escolha uma música</span>
                   <div class="player__author-YT-row">
@@ -312,5 +312,7 @@
         </section>
       </div>
     </section>
+	<script src="./js/togglePlayer.js"></script>
+	<script src="./js/musicPlayer.js"></script>
   </body>
 </html>

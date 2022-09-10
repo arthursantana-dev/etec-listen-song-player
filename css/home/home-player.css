@@ -2,6 +2,16 @@
 
 /*------------------player------------------*/
 
+.player--invisible {
+	opacity: 0.2 !important;
+	transition: 1s;
+}
+
+div.player__toggle-player-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
 button.player__toggle-player{
 	right: 2rem;
 	bottom: 13rem;
@@ -21,7 +31,6 @@ section.player {
 	bottom: 1rem;
 	right: 1rem;
 	padding: 1rem;
-	padding-top: 2rem;
 	background-color: var(--escuro);
 	border-radius: 0.5rem;
 	border: 1px solid var(--claro-secundario-leve);
@@ -29,6 +38,7 @@ section.player {
 	width: 20rem;
 	max-width: 25rem;
 	height: fit-content;
+	transition: 0.5s;
 }
 
 section.player__song-info {
