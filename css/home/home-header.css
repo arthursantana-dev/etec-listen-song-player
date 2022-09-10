@@ -1,0 +1,52 @@
+@import url(../variaveis.css);
+
+/*------------------header------------------*/
+
+header.header {
+	background-color: var(--escuro);
+	color: var(--claro);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	z-index: 3 !important;
+	width: 100vw;
+	height: 7rem;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 600;
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	margin: 0;
+}
+
+header h2 {
+	font-size: 1.55rem;
+	margin: 0;
+}
+
+header ul li {
+	display: flex;
+	margin-left: 1rem;
+	font-size: 0.9rem;
+}
+
+header ul li:hover {
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
+img.header__logo {
+	width: 12rem;
+}
+
+img.header__icon {
+	width: 1.9rem;
+	height: 1.9rem;
+	margin-right: 0.15rem;
+}

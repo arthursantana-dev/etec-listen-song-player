@@ -1,0 +1,152 @@
+@import url(./variaveis.css);
+
+@import url(./home-header.css);
+@import url(./home-player.css);
+@import url(./home-footer.css);
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Figtree', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+}
+
+section.row {
+	display: flex;
+	height: 100%;
+	flex-wrap: wrap;
+}
+
+section.wrapper {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+section.scroll-wrapper {
+	margin: 0 !important;
+	max-width: none !important;
+	padding: 0;
+}
+
+div.row {
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+/*------------------menu------------------*/
+
+section.scroll-wrapper div.row {
+	background-color: var(--escuro-secundario);
+}
+
+aside.menu {
+	background-color: var(--escuro-secundario);
+	z-index: 2;
+	width: 100%;
+	padding: 1rem;
+	/* position: fixed; */
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+section.albuns-wrapper {
+	height: fit-content;
+	position: fixed;
+}
+
+.menu__album {
+	justify-self: flex-start;
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
+}
+
+.menu__album span{
+	color: white;
+	text-align: center;
+	font-family: 'Figtree', sans-serif;
+	font-weight: 700;
+	font-size: 1.75rem;
+}
+.menu__album__pics{
+	gap: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.menu__album__pics__group{
+	height: min(calc(100% - 2rem), 10rem) ;
+	width: min(calc(100% - 2rem), 10rem) ;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.menu__album__pics__group img{
+	object-position: center;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.menu__album__pics__group span{
+	color: white;
+	text-align: center;
+	font-family: 'Figtree', sans-serif;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+
+/*------------------main------------------*/
+
+main.main {
+	background: rgb(8,0,16);
+	background: linear-gradient(0deg, rgba(8,0,16,1) 0%, rgba(28,0,52,1) 100%);
+	background: url('../../imagens/pattern-bg-2.png');
+	background-repeat: repeat;
+	background-size: 30vw;
+	height: fit-content;
+	padding-top: 3%;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+
+	position: relative;
+}
+
+main.main h1 {
+	font-size: 3.75rem;
+	margin-bottom: 1rem;
+}
+
+main * {
+	color: var(--claro);
+}
+
+section.song-feed {
+	padding: 3.15rem;
+}
+
+main hr {
+	opacity: 0.1;
+}
+
+@media screen and (max-width: 767px){
+	section.albuns-wrapper {
+		margin-top: 0;
+		position: static;
+	}
+}
