@@ -3,8 +3,8 @@
 /*------------------player------------------*/
 
 button.player__toggle-player{
-	position: fixed;
-	right: 3rem;
+	right: 2rem;
+	bottom: 13rem;
 	border: none;
 	background-color: var(--escuro);
 }
@@ -21,6 +21,7 @@ section.player {
 	bottom: 1rem;
 	right: 1rem;
 	padding: 1rem;
+	padding-top: 2rem;
 	background-color: var(--escuro);
 	border-radius: 0.5rem;
 	border: 1px solid var(--claro-secundario-leve);
