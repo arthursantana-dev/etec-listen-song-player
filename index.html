@@ -27,40 +27,52 @@
   </head>
 
   <body>
-    <!-- header -->
-    <header class="header">
-      <img
+
+    <!-- header (bootstrap)-->
+
+    <nav class="navbar navbar-expand-lg header">
+      <div class="container-fluid d-flex justify-content-between">
+        <img
         src="./imagens/logotipo - escuro - roxo.png"
         alt=""
         class="header__logo"
       />
-      <ul>
-        <li>
-          <img
-            src="./imagens/icons/biblioteca.png"
-            alt="Biblioteca"
-            class="header__icon"
-          />
-          <h2>minhas músicas</h2>
-        </li>
-        <li>
-          <img
-            src="./imagens/icons/ajustes.png"
-            alt="Ajustes"
-            class="header__icon"
-          />
-          <h2>ajustes</h2>
-        </li>
-        <li>
-          <img
-            src="./imagens/icons/conta.png"
-            alt="Conta"
-            class="header__icon"
-            onclick="window.location.href = './conta.html'"
-          />
-        </li>
-      </ul>
-    </header>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon header__toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse align-items-end" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__ul">
+            <li class="nav-item">
+              <img
+                src="./imagens/icons/biblioteca.png"
+                alt="Biblioteca"
+                class="header__icon"
+              />
+              <h2>minhas músicas</h2>
+            </li>
+
+            <li class="nav-item">
+              <img
+                src="./imagens/icons/ajustes.png"
+                alt="Ajustes"
+                class="header__icon"
+              />
+              <h2>ajustes</h2>
+            </li>
+
+            <li class="nav-item">
+              <img
+                src="./imagens/icons/conta.png"
+                alt="Conta"
+                class="header__icon"
+                onclick="window.location.href = './conta.html'"
+              />
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <section class="container scroll-wrapper">
       <!-- menu lateral -->
@@ -255,9 +267,10 @@
                 />
               </section>
             </section>
+            
             <!-- footer -->
             <footer class="footer">
-              <section class="footer__row">
+              <section class="footer__row d-flex flex-column flex-lg-row">
                 <div class="column">
                   <div>
                     <p class="footer__content">fale com a gente</p>
@@ -282,7 +295,7 @@
                 <div class="column">
                   <section class="footer__partners">
                     <p class="footer__content">parceiros</p>
-                    <section class="footer__partners-row">
+                    <section class="footer__partners-row d-flex flex-row flex-wrap">
                       <img
                         src="./imagens/icons/cisco.png"
                         alt=""

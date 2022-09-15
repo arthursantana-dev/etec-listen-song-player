@@ -2,11 +2,35 @@
 
 /*------------------header------------------*/
 
+nav.header {
+	background-color: var(--escuro);
+	color: var(--claro);
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	width: 100%;
+}
+
+li.nav-item {
+	display: flex;
+	align-items: center;
+}
+
+span.header__toggler-icon {
+	filter: invert(1);
+}
+
+ul.header__ul {
+	display: flex;
+	gap: 3rem;
+}
+
 header.header {
 	background-color: var(--escuro);
 	color: var(--claro);
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 10vw;
 	align-items: center;
 	position: fixed;
 	z-index: 3 !important;
