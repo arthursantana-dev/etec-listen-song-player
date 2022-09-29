@@ -4,7 +4,6 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Figtree', sans-serif;
-	box-sizing: border-box;
 }
 
 body {
@@ -12,6 +11,7 @@ body {
 	background-repeat: repeat;
 	background-size: 30vw;
 	background-attachment: fixed;
+	margin: auto;
 }
 
 div.go-to-home {
@@ -30,13 +30,7 @@ div.go-to-home p {
 }
 
 /*------------------user-info------------------*/
-
-main.main {
-	width: fit-content;
-}
-
 main.main__user {
-	width: 80vw;
 	margin: auto;
 	background-color: var(--escuro);
 	padding: 1rem;
@@ -75,8 +69,7 @@ ul.user-plan__plan-details {
 /*------------------main------------------*/
 
 main.main {
-	margin-inline: auto;
-	width: fit-content;
+	margin: auto;
 	color: var(--claro);
 	display: flex;
 	flex-direction: column;
@@ -91,10 +84,10 @@ img.user-profile-pic {
 
 section.user-plan {
 	background-color: var(--escuro);
-	width: min(60vw, 50rem);
+	width: min(100%, 800px);
 	height: 100%;
 	padding: 2rem;
-	margin: 2rem;
+	margin: auto;
 	border-radius: 0.5rem;
 }
 

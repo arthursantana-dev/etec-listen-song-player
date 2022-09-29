@@ -197,7 +197,7 @@ div.song-card {
 	height: 10rem;
 	background-color: var(--escuro-secundario-leve);
 	border-radius: 0.25rem;
-	width: min(100%, 20rem);
+	width: 100%;
 }
 
 div.song-card:hover {
@@ -223,8 +223,8 @@ p.card__song-author {
 	opacity: 0.7;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1000px) {
 	div.song-card {
-		width: 100%;
+		width: 20rem;
 	}
 }

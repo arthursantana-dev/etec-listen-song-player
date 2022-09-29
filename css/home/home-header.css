@@ -14,6 +14,7 @@ nav.header {
 li.nav-item {
 	display: flex;
 	align-items: center;
+	margin-inline: 1rem;
 }
 
 span.header__toggler-icon {
@@ -70,7 +71,7 @@ img.header__logo {
 }
 
 img.header__icon {
-	width: 1.9rem;
-	height: 1.9rem;
+	width: 2.2rem;
+	height: 2.2rem;
 	margin-right: 0.15rem;
 }
