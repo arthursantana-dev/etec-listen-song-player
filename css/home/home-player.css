@@ -198,6 +198,7 @@ div.song-card {
 	background-color: var(--escuro-secundario-leve);
 	border-radius: 0.25rem;
 	width: 100%;
+	flex-grow: 1;
 }
 
 div.song-card:hover {
