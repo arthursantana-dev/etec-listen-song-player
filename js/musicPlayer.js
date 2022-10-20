@@ -96,6 +96,14 @@ const songList = [
 		cover: "https://github.com/arthursantana-dev/musicas-etec-listen/raw/main/img-musicas/41Xpw3DEF1L._UXNaN_FMjpg_QL85_.jpg",
 		youTubeUrl: "https://www.youtube.com/watch?v=lW9ep22YmlM",
 		duration: '3:44'
+	},
+	{
+		name: "Yellow",
+		author: "Coldplay",
+		source: "https://github.com/arthursantana-dev/etec-musicas-listen/blob/271f0ea84ddaac2d5d6f9de944313bcab5ab34de/Coldplay%20-%20Yellow.mp3",
+		cover: "https://github.com/arthursantana-dev/etec-musicas-listen/blob/271f0ea84ddaac2d5d6f9de944313bcab5ab34de/img-musicas/c-y.jpg",
+		youTubeUrl: "https://www.youtube.com/watch?v=1aokooixKIo",
+		duration: '4:27'
 	}
 ]
 
