@@ -20,6 +20,7 @@ footer .column div {
 section.footer__row {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 footer p.footer__content {
@@ -73,6 +74,7 @@ section.footer__partners-row {
 	display: flex;
 	justify-content: space-around;
 	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 img.partners-img-large {

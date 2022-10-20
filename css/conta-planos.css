@@ -12,6 +12,7 @@ body {
 	background-size: 30vw;
 	background-attachment: fixed;
 	margin: auto;
+	width: 100%;
 }
 
 div.go-to-home {
@@ -35,6 +36,7 @@ main.main__user {
 	background-color: var(--escuro);
 	padding: 1rem;
 	border-radius: 0.75rem;
+	width: fit-content;
 }
 
 section.user-info {
