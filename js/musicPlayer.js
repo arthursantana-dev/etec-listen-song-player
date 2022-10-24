@@ -69,6 +69,14 @@ const songList = [
 		duration: '2:28'
 	},
 	{
+		name: "Treat You Better",
+		author: "Shawn Mendes",
+		source: "https://github.com/arthursantana-dev/etec-musicas-listen/raw/main/Shawn%20Mendes%20-%20Treat%20You%20Better%20(Lyrics).mp3",
+		cover: "https://github.com/arthursantana-dev/etec-musicas-listen/raw/main/img-musicas/t-y-b.jpg",
+		youTubeUrl: "https://www.youtube.com/watch?v=eiG_DUXD8YQ",
+		duration: '3:08'
+	},
+	{
 		name: "Smells Like Teen Spirit",
 		author: "Nirvana",
 		source: "https://github.com/arthursantana-dev/musicas-etec-listen/raw/main/Nirvana%20-%20Smells%20Like%20Teen%20Spirit%20(128%20kbps)%20(1).mp3",
@@ -107,6 +115,14 @@ const songList = [
 		cover: "https://github.com/arthursantana-dev/etec-musicas-listen/raw/main/img-musicas/c-y.jpg",
 		youTubeUrl: "https://www.youtube.com/watch?v=tdVAqxNLXiw",
 		duration: '4:27'
+	},
+	{
+		name: "Make You Mine",
+		author: "PUBLIC",
+		source: "https://github.com/arthursantana-dev/etec-musicas-listen/raw/main/Make%20You%20Mine%20-%20PUBLIC.mp3",
+		cover: "https://github.com/arthursantana-dev/etec-musicas-listen/raw/main/img-musicas/m-y-m.jpg",
+		youTubeUrl: "https://www.youtube.com/watch?v=QQPgk_MkK4k",
+		duration: '3:53'
 	}
 ]
 

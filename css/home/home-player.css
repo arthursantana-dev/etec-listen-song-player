@@ -202,7 +202,10 @@ div.song-card {
 	background-color: var(--escuro-secundario-leve);
 	border-radius: 0.25rem;
 	width: 100%;
-	flex-grow: 1;
+
+	flex-grow: 2;
+	flex-shrink: 0;
+	max-width: 36rem;
 }
 
 div.song-card:hover {
@@ -211,7 +214,7 @@ div.song-card:hover {
 
 section.song-feed section.row {
 	display: flex;
-	gap: 1rem;	
+	gap: 2rem;	
 }
 
 span.card__song-info {
