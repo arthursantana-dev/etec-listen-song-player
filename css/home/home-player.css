@@ -77,6 +77,8 @@ img.player__song-img{
 	width: 5rem;
 	height: 5rem;
 	border-radius: 0.25rem;
+	background-position: center;
+	object-fit: cover;
 }
 
 section.player__buttons-row{
@@ -154,20 +156,20 @@ input#player__song-current-time-i::-webkit-progress-inner-element {
 input[type='range'] {
 	overflow: hidden;
 	width: 80px;
-	-webkit-appearance: none;
+
 	background-color: var(--claro);
 }
   
 input[type='range']::-webkit-slider-runnable-track {
 	height: 10px;
-	-webkit-appearance: none;
+
 	color: var(--destaque);
 	margin-top: -1px;
 }
   
 input[type='range']::-webkit-slider-thumb {
 	width: 10px;
-	-webkit-appearance: none;
+
 	height: 10px;
 	cursor: ew-resize;
 	background: #434343;
@@ -189,6 +191,8 @@ img.card__img {
 	width: 8.25rem;
 	height: 8.25rem;
 	margin-right: 1rem;
+	background-position: center;
+	object-fit: cover;
 }
 
 div.song-card {

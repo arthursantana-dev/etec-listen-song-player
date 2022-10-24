@@ -18,8 +18,11 @@ const playerSongCurrentTime = document.querySelector('#song__current-time-value'
 const playerSongRangeInput = document.querySelector('input[name="player__song-current-time-i"]')
 
 
+let currentSongId = 0
+
 previousSongButton.addEventListener('click', () => {
 	playSong(currentSongId - 1)
+	console.log(songList[currentSongId - 1]);
 })
 
 nextSongButton.addEventListener('click', () => {
@@ -100,15 +103,12 @@ const songList = [
 	{
 		name: "Yellow",
 		author: "Coldplay",
-		source: "https://github.com/arthursantana-dev/etec-musicas-listen/blob/271f0ea84ddaac2d5d6f9de944313bcab5ab34de/Coldplay%20-%20Yellow.mp3",
-		cover: "https://github.com/arthursantana-dev/etec-musicas-listen/blob/271f0ea84ddaac2d5d6f9de944313bcab5ab34de/img-musicas/c-y.jpg",
-		youTubeUrl: "https://www.youtube.com/watch?v=1aokooixKIo",
+		source: "https://github.com/arthursantana-dev/etec-musicas-listen/raw/main/Coldplay%20-%20Yellow.mp3",
+		cover: "https://github.com/arthursantana-dev/etec-musicas-listen/raw/main/img-musicas/c-y.jpg",
+		youTubeUrl: "https://www.youtube.com/watch?v=tdVAqxNLXiw",
 		duration: '4:27'
 	}
 ]
-
-let currentSongId = 0
-
 
 function minsToSec(mins) {
 	const [min, sec] = mins.split(':')
@@ -132,6 +132,8 @@ player.addEventListener('timeupdate', () => {
 
 function playSong(songId) {
 
+	songId = parseInt(songId)
+
 	currentSongId = songId
 	playPauseButton.src = imgPausarUrl
 
@@ -145,7 +147,15 @@ function playSong(songId) {
 		currentSongId = songId
 	}
 
+	
+
+	console.log(songList[songId]);
+	console.log(typeof songId);
+	console.log(songList[songId].source);
+
+
 	player.src = songList[songId].source
+	
 	playerSongName.textContent = songList[songId].name
 	playerSongAuthor.textContent = songList[songId].author
 	playerSongImage.src = songList[songId].cover
