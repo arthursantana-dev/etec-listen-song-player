@@ -236,3 +236,14 @@ p.card__song-author {
 		width: 20rem;
 	}
 }
+
+@media screen and (max-width: 650px){
+	section.player {
+		width: 90%;
+		min-height: 13rem;
+	}
+
+	section.song-feed{
+		padding: 1.15rem !important;
+	}
+}
