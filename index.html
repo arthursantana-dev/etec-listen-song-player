@@ -43,7 +43,7 @@
         </button>
         <div class="collapse navbar-collapse align-items-end" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__ul">
-            <li class="nav-item">
+            <li class="nav-item" onclick="window.location.href = './library.html'">
               <img
                 src="./imagens/icons/biblioteca.png"
                 alt="Biblioteca"
@@ -72,6 +72,13 @@
                 
               />
               <h2 class="mx-1 p-1">conta</h2>
+            </li>
+
+            <li id="header__search">
+              <form class="form-inline my-2 my-lg-0 d-flex">
+                <input class="form-control mr-sm-2" type="search" id="header__input" placeholder="Busque por uma música ou playlist" aria-label="Search">
+                <button class="btn btn-search my-2 my-sm-0 m-3" type="submit">Buscar</button>
+              </form>
             </li>
             
           </ul>
