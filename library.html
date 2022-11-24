@@ -2,37 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/library.css">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="css/conta-planos.css">
-    <link rel="stylesheet" href="./css/home/home-footer.css">
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
-    <title>Biblioteca - listen!</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/library.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="css/conta-planos.css">
+  <link rel="stylesheet" href="./css/home/home-footer.css">
+
+  <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+  <title>Biblioteca - listen!</title>
 </head>
 
 <body>
+  <div class="container">
+    <div class="go-to-home" onclick="window.location.href = './index.html'">
+      <p>« voltar</p>
+    </div>
     <div class="container">
-        <main>
-            <h1>biblioteca</h1>
-           <div class="content">
+      <main class="main">
+        <h1>biblioteca</h1>
 
-            <div class="dropdown">
-                <button class="drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Playlists
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+        <section class="recent_act">
+          <div class="dropdown">
+            <ul class="categories">
+              <li>
+                <button id="dropBtn" onclick="hideShow()">atividade recente<i id="left"
+                    class="fa-solid fa-caret-down"></i></button>
+              </li>
+              <div class="dropdown_content">
+                <div class="images">
+                  <div class="card">
+                    <img src="imagens/img-musicas/ajr-dtoml.jpg" />
+                    <div class="card_text">
+                      <span>Don't Trow Out My Legos</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagens/img-musicas/ajr-wsv.jpg" />
+                    <div class="card_text">
+                      <span>World Smallest Violin</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagens/img-musicas/cyfmh.jpg" />
+                    <div class="card_text">
+                      <span>Can You Feel My Heart?</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagens/img-musicas/d.png" />
+                    <div class="card_text">
+                      <span>Dandelions</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagens/img-musicas/slts.jpg" />
+                    <div class="card_text">
+                      <span>Something in The Way</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagens/img-musicas/to-ao.jpg" />
+                    <div class="card_text">
+                      <span>Another Love</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-           </div>
-        </main>
-    </div>
+              <li>
+                <button id="dropBtn" onclick="hideShow2()"><i class="fa-solid fa-list"></i> playlists<i id="left"
+                    class="fa-solid fa-caret-down"></i></button>
+              </li>
+              <!--Content-->
+              <div class="dropdown_content2">
+                <ul>
+                  <li>
+                    <span>Smoke and Mirrors</span>
+                  </li>
+                  <li>
+                    <span>Night Visions</span>
+                  </li>
+                </ul>
+            </div>
+            <li>
+              <button id="dropBtn" onclick="hideShow3()"><i class="fa-regular fa-user"></i> artistas<i id="left"
+                class="fa-solid fa-caret-down"></i></button>
+            </li>
+              <div class="dropdown_content3">
+                <ul>
+                  <li>
+                    <span>AJR</span>
+                  </li>
+                  <li><span>Bring Me The Horizon</span></li>
+                  <li><span>Ruth B.</span></li>
+                  <li><span>Nirvana</span></li>
+                  <li><span>Tom Odell</span></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </section>
 
+      </main>
+      <footer class="footer">
+        <section class="footer__row d-flex flex-column flex-lg-row">
+          <div class="column">
+            <div>
+              <p class="footer__content">fale com a gente</p>
+              <p class="footer__content">privacidade</p>
+              <p class="footer__content">direitos autorais</p>
+              <p class="footer__content">
+                siga a <i class="footer__text-logo">listen!</i> nas redes
+                sociais
+              </p>
+            </div>
+            <span class="desc">
+              <i class="footer__text-logo">listen!</i>™ é um site criado
+              por
+              <a href="https://github.com/arthursantana-dev" target="_blank" rel="noopener noreferrer">Arthur
+                Santana</a>
+            </span>
+          </div>
+          <div class="column">
+            <section class="footer__partners">
+              <p class="footer__content">parceiros</p>
+              <section class="footer__partners-row d-flex flex-row flex-wrap">
+                <img src="./imagens/icons/cisco.png" alt="" class="footer__partners-img" />
+                <img src="./imagens/icons/jbl.png" alt="" class="footer__partners-img" />
+                <img src="./imagens/icons/spotify.png" alt="" class="footer__partners-img" />
+                <img src="./imagens/icons/unibank.png" alt="" class="footer__partners-img partners-img-large" />
+              </section>
+            </section>
+          </div>
+        </section>
+      </footer>
+      </main>
+      </section>
+    </div>
+    </section>
+  </div>
+  <script src="https://kit.fontawesome.com/bdc645c07d.js" crossorigin="anonymous"></script>
+  <script>
+    var div = document.querySelector('.dropdown_content');
+    var div2 = document.querySelector('.dropdown_content2');
+    var div3 = document.querySelector('.dropdown_content3');
+    display = 1
+    function hideShow() {
+      if (display == 1) {
+        div.style.display = 'block';
+        display = 0;
+      }
+      else {
+        div.style.display = 'none';
+        display = 1;
+        document.querySelector('.main').style.paddingBottom = "";
+      }
+    }
+    function hideShow2() {
+      if (display == 1) {
+        div2.style.display = 'block';
+        display = 0;
+      }
+      else {
+        div2.style.display = 'none';
+        display = 1;
+        document.querySelector('.main').style.paddingBottom = "";
+      }
+    }
+    function hideShow3() {
+      if (display == 1) {
+        div3.style.display = 'block';
+        display = 0;
+      }
+      else {
+        div3.style.display = 'none';
+        display = 1;
+        document.querySelector('.main').style.paddingBottom = "";
+      }
+    }
+  </script>
 </body>
 
 </html>

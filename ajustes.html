@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/ajustes.css">
-    <!DOCTYPE html>
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="css/conta-planos.css">
     <link rel="stylesheet" href="./css/home/home-footer.css">
-    <title>Ajustes</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>Ajustes - listen!</title>
 </head>
 <body>
     <div class="container">
@@ -18,15 +18,97 @@
         </div>
         <div class="container">
             <main>
-                <h1>Ajustes</h1>
+                <h1>ajustes</h1>
+
+                <section class="user_info">
+                    <img src="./imagens/icons/conta.png" alt="" class="user-profile-pic">
+                    <ul>
+                        <li>
+                            <input type="text" id="username" value="Arthur Santana" readonly> 
+                        </li>
+                        <li><a href="conta.html">Ir para a conta</a></li>
+                    </ul>
+                    <button id="btn_edit">
+                        <i class="fa-solid fa-pen-to-square fa-2xl" style=" color: white;"></i>                    
+                    </button>
+                    <button id="btn_check">
+                        <i class="fa-solid fa-check fa-2xl" style="color: white;"></i>
+                    </button>
+                </section>
                 <div class="form_group">
-                    <label for="chck_rest" class="switch">
-                        Modo restrito
-                        <input type="checkbox" name="chck_rest" id="chck_rest">
-                    </label>
+                    <span>Modo Restrito</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+
+                <div class="form_group">
+                    <span>Alta qualidade</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>
                 </div>
             </main>
+            <footer class="footer">
+                <section class="footer__row d-flex flex-column flex-lg-row">
+                  <div class="column">
+                    <div>
+                      <p class="footer__content">fale com a gente</p>
+                      <p class="footer__content">privacidade</p>
+                      <p class="footer__content">direitos autorais</p>
+                      <p class="footer__content">
+                        siga a <i class="footer__text-logo">listen!</i> nas redes
+                        sociais
+                      </p>
+                    </div>
+                    <span class="desc">
+                      <i class="footer__text-logo">listen!</i>™ é um site criado
+                      por
+                      <a
+                        href="https://github.com/arthursantana-dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Arthur Santana</a
+                      >
+                    </span>
+                  </div>
+                  <div class="column">
+                    <section class="footer__partners">
+                      <p class="footer__content">parceiros</p>
+                      <section class="footer__partners-row d-flex flex-row flex-wrap">
+                        <img
+                          src="./imagens/icons/cisco.png"
+                          alt=""
+                          class="footer__partners-img"
+                        />
+                        <img
+                          src="./imagens/icons/jbl.png"
+                          alt=""
+                          class="footer__partners-img"
+                        />
+                        <img
+                          src="./imagens/icons/spotify.png"
+                          alt=""
+                          class="footer__partners-img"
+                        />
+                        <img
+                          src="./imagens/icons/unibank.png"
+                          alt=""
+                          class="footer__partners-img partners-img-large"
+                        />
+                      </section>
+                    </section>
+                  </div>
+                </section>
+              </footer>
+            </main>
+          </section>
         </div>
+      </section>
     </div>
+    <script src="https://kit.fontawesome.com/bdc645c07d.js" crossorigin="anonymous"></script>
+    <script src="js/settings.js"></script>
 </body>
 </html>

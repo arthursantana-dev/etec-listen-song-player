@@ -1,42 +1,68 @@
 @import url(variaveis.css);
+@import url(ajustes.css);
 
-.container{
-    max-width: 55rem;
-    margin: 0 auto;
-    width: 100%;
+.recent_act{
+    color: white;
 }
-
-main{
+.recent_act .title{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: auto;
-    padding: 2rem;
-    border-radius: .5rem;
-    flex-direction: column;
-    gap: 2rem;
 }
-main h1{
-    color: white;
-    font-size: 5rem;
-}
-.content{
-    background-color: var(--escuro);
-}
-
 .dropdown{
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
-
-.drop{
+.dropdown ul{
+    list-style: none;
+}
+.dropdown #dropBtn{
     background-color: transparent;
-    color: white;
+    border: none;
     font-size: 1.5rem;
+    color: white;
+    margin-right: 10rem;
     cursor: pointer;
-    width: 25rem;
+}
+.dropdown_content, .dropdown_content2, .dropdown_content3{
+    display: none;
+    width: 100%;
+    animation: rotateX 300ms ease-in-out forwards;
+    text-align: center;
 }
 
-.dropdown-menu{
-    position: absolute;
-    display: none;
+#dropBtn {
+    margin-left: 10rem;
+}
+#left{
+    margin-left: 10rem;
+}
+
+
+@keyframes rotateX {
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    50% {
+      transform: rotateX(-20deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.images img{
+    width: 8rem;
+    height: 8rem;
+}
+.card_text{
+    text-align: center;
+    font-size: .8rem;
 }
