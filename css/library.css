@@ -20,21 +20,19 @@
     border: none;
     font-size: 1.5rem;
     color: white;
-    margin-right: 10rem;
     cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    margin: auto;
 }
 .dropdown_content, .dropdown_content2, .dropdown_content3{
     display: none;
     width: 100%;
     animation: rotateX 300ms ease-in-out forwards;
     text-align: center;
-}
-
-#dropBtn {
-    margin-left: 10rem;
-}
-#left{
-    margin-left: 10rem;
+    margin-block: 0.5rem
 }
 
 
@@ -65,4 +63,10 @@
 .card_text{
     text-align: center;
     font-size: .8rem;
+}
+
+ul.categories > li {
+    width: 20rem;
+    margin-bottom: 0.2rem;
+    margin: auto;
 }
